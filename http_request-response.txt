@@ -1,0 +1,72 @@
+HTTP ACCESS/REQUEST EXPLAINED
+
+
+
+HTTP Request  ->  DNS Domain Name Server(Similar to phonebook) -> IP ADDRESS(Like a house address - computers) = HTTP Response
+
+Example:
+
+google.com 	 -> 	google.com | 192.123.4.52 	-> 	192.123.4.52  = HTTP Response
+			yahoo.com  | 132.54.213.2				
+
+Result:
+	When requested, it finds the DNS of the IP for the requested domain name. It thens shows the content inside of the 192.123.4.52(-HTML, CSS, JS) through the browser.
+
+
+
+
+IKEA EXPLANATION
+
+Customers 	->	Receptionist	->	 Foreign Workers	-> 	Warehouse
+HTTP Request   ->  Web Server	->	 Interpreters     ->  Database   -> Interpreters to ( Assemble Given data) ->  Webserver = HTTP Response
+HTTP Request   ->  Web Server	->	 Static Files     =  HTTP Response
+
+
+
+SERVER
+	-Apache
+	-NginX
+	-Tomcat
+	-….
+
+
+INTERPRETERS(Talk to Database, Retrieve Information , Assemble, Spit out html-css-js)
+	-PHP
+		-Libraries-FrameWork-Toolboxes
+			-CodeIgniter, CakePHP, Zend, Symphony, etc..
+		
+	-Python
+		-Libraries-FrameWork-Toolboxes
+			- Django, etc.. 
+	-Ruby
+		-Libraries-FrameWork-Toolboxes
+			-Rails, Sinatra , etc…
+	-C#
+		-Libraries-FrameWork-Toolboxes
+			-.Net , etc..
+	-Java
+		-Libraries-FrameWork-Toolboxes
+			-Spring Framework, etc…
+	-….
+
+
+DATABASE(Hold Information)
+	-MySql
+	-SqLlite
+	-Postgress
+	-Oracle
+	-MongoDB
+	-…. 
+
+
+Static Files
+	- Images
+	- HTML
+	- etc..
+
+
+
+
+Explanation:
+	If the request is just html, images, etc… web server looks inside of static files.
+	if the request has extensions like .php , web server passes it through the Interpreters, if the Interpreters need data base it then 	pass it through the database then back to Interpreters to assemble all the given parts. After assembling, Interpreters gives it to the 	Web server as a response.
