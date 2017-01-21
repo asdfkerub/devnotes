@@ -1,0 +1,34 @@
+HTML NOTES
+
+
+AUDIO
+<audio controls loop autoplay>
+    <source src="desperado.ogg">
+    <source src="desperado.mp3">
+</audio>
+
+To play audio in different browsers. controls loop autoplay can be disabled by removing.
+Firefox - .ogg
+Safari - .mp3
+Chrome - .ogg & .mp3
+
+
+VIDEO
+<video width="400" height="200" poster="picture.jpg" controls>
+    <source src="caddyshack.ogv">
+    <source src="movie.mp4">
+</video>
+
+To play video in different browsers.
+Firefox - .ogv
+Safari - .mp4
+Chrome - .ogv & .mp4
+
+
+AUTOFOCUS
+<label for="food">What is your favorite food?</label>
+<input id="food" name="food" type="text" autofocus>
+
+Automatically focuses on the input once the document is loaded.
+
+
