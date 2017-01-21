@@ -1,0 +1,69 @@
+TERMINAL
+
+pwd
+this command any time you are unsure where you are currently in your file structure.
+
+ls
+ls command to see all the files and folders that are in your current directory.
+
+cd
+To traverse down into a child folder from the current directory, you would use   
+cd [folder_name] which translates to: "Change directory to [folder_name]" where [folder_name] is the name of the child folder.
+
+cd ..
+To traverse up to a parent folder from where you currently are, it's cd.. (Pronounced: "cd dot dot")
+
+cd /
+cd / will change the current directory to the root directory of your computer. From this folder, you can access your application folders and the entire contents of the drive. Pronounced: "c d slash"
+
+cd ~
+cd ~ will change the current directory to the root directory of the current user. This is usually where terminal will start at whenever you open it. Pronounced: "c d tilda"
+
+mkdir
+The command mkdir [folder name] will make a new directory. Whatever argument you pass into this command will be the name of your new file.
+* mkdir [folder name]
+
+rmdir
+If you try to delete a folder with contents inside you will get an error! Our computer wants us to say more explicitly to delete this directory and everything inside of it by using the rm -rf option the r stands for recursive, which is saying continue the remove function for all files and folders inside this directory. The f stands for force, which means it will make the delete happen regardless of permissions.
+* rmdir [folder name](no brakets) 
+* rmdir [folder name](if empty folder)
+* rm -rf [folder name](if non-empty folder)
+
+touch [file name](no brakets)
+touch command will create a new, empty fle with the name and extension type that you specify. You can make any type of file if you provide the extension type.
+
+rm
+deleting a file using the rm command will remove the file without any prompt. It will be permanently deleted and you cannot recover this file from your trash. if you want to be asked if you should delete the fle you can add in the -i to the command. When it prompts you would type Y for yes or N for no.
+* rm [filename] (if you don’t want to get prompted)
+* rm -i [filename] (if you want to be prompted)
+
+mv
+The  mv command has two uses. First, you can rename a file by first providing the file's name and then providing what you want the fle to be renamed to. In the first example, oldName.html would be renamed to newName.html. Second, it can be used to move a file to a different folder. In the second example, newName.html would be moved up one directory with the same name. In either case, think of this command as moving a file into its current directory with a different name or into a different directory with the same or different name.
+* mv filename newfilename(rename file)
+* mv filename ../newerfilename (move file up by one directory and rename)
+* moving directory
+	mv [folder to move] [Folder destination to move into]
+	MacBook-Pro:desktop jbenammi$ mv NewProjectFolder/ JonathanBenAmmi/
+
+
+cp
+cp command will copy a fle into the current directory with the new name you provided. In the example, say you were in your Desktop directory and you ran the cp command. The Desktop directory would now have index.html and copy.html in it.
+* cp filenametocopy newnameoffcoppiedfile
+
+cp -rf
+Copying a directory is similar to copying a fle but we need to pass the  -rf option in order to copy all the internal contents of the directory. First provide the name of the directory you want to copy and then the name of the copy. If the directory does not exist, it will create the directory. If it does already exist, it will make a copy into that directory. 
+* cp -rf [folder to copy] [Folder destination to copy into]
+
+open .
+open current directory
+
+grep
+looks for a phrase in a location / file 
+* grep [phrasetosearch] [wheretosearch]
+
+sudo
+overrides security
+
+
+
+
