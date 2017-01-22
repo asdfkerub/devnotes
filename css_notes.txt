@@ -1,8 +1,7 @@
 •Block elements: <body> , <div> , <form> , <h1> - <h6> , <p> , <table> , <ul> , <ol> , <li>
 •Inline elements: <a> , <img> , <span> , <input> , <label> , <select> , <textarea>
-  * Invali to put block elements inside of inline elements.
+  * Invalid to put block elements inside of inline elements.
 
 •If all elements inside a container(div) are floted,the container will collapse.
-to solve this. add an overflow:hiddent and height auto to the container element that is containing
-if loated elements. OR add a dummy div inside the same container and add css to the dummy of
-clear:both;
+to solve this. add an overflow:hidden; and height:auto; to the container element that is containing
+floated elements. OR add a dummy div inside the same container and add css to the dummy of clear:both;
