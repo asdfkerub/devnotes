@@ -4,4 +4,5 @@
 
 •If all elements inside a container(div) are floted,the container will collapse.
 to solve this. add an overflow:hiddent and height auto to the container element that is containing
-floated elements.
+if loated elements. OR add a dummy div inside the same container and add css to the dummy of
+clear:both;
