@@ -1,3 +1,7 @@
 •Block elements: <body> , <div> , <form> , <h1> - <h6> , <p> , <table> , <ul> , <ol> , <li>
 •Inline elements: <a> , <img> , <span> , <input> , <label> , <select> , <textarea>
   * Invali to put block elements inside of inline elements.
+
+•If all elements inside a container(div) are floted,the container will collapse.
+to solve this. add an overflow:hiddent and height auto to the container element that is containing
+floated elements.
