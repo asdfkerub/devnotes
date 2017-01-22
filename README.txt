@@ -1,1 +1,1 @@
-These are my notes while I was attending CodingDojo.
+These are my notes while I am  attending CodingDojo.
