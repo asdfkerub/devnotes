@@ -8,8 +8,7 @@ Git Commands
 •	git log - shows all the backups created in the repository.
   ⁃	git log -p : shows what is different in revisions
   ⁃	git log -2 : shows (-2) how many to log
-•	git diff —stat [commit hash] : shows the amount of code that has been modified since a specific commit
-•	
+•	git diff —stat [commit hash] : shows the amount of code that has been modified since a specific commit	
 •	git revert -n [commit hash] : reverts to an old commit
   ⁃	* revert to most recent commit first so theres no conflict of codes 
   ⁃	use never over reset
