@@ -8,3 +8,8 @@ floated elements. OR add a dummy div inside the same container and add css to th
 
 •Font size, use EM. Ems responds to resizing well.
   - 12 pt = 16px = 1em = 100%
+
+• LEGO CONCEPT
+  - A vay to visualize different elements inside of a webpage.
+  - Add big lego blocks first , then add smaller elements inside of big block.
+
