@@ -5,6 +5,7 @@ this command any time you are unsure where you are currently in your file struct
 
 ls
 ls command to see all the files and folders that are in your current directory.
+  - ls -al : shows  more information about the files inside, also shows hidden files
 
 cd
 To traverse down into a child folder from the current directory, you would use   
