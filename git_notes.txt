@@ -1,4 +1,12 @@
 Git Commands
+===============
+1) git add .
+2) git commit -m
+3) git push origin [branch name]
+4) git checkout master
+5) git merge [branch name]
+6) git push
+===============
 • git init - initialize the repository.
 • git add . - add all the files that were changed since the last back up to the staging area.
 • git status - shows you all the files that were changed since the last backup and which ones are already added to the staging area.
