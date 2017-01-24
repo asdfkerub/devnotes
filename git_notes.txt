@@ -31,5 +31,9 @@ Git Commands
 •git push origin [branch name]
   - links the branch to the master
   - checkout master first then push
+  - * HAVE TO DO THIS EVERY EDIT
+• git pull origin master
+  - do this after merging from github
+
 
 
