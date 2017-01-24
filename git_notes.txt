@@ -29,6 +29,7 @@ Git Commands
   - merges all branch to the respotory
   - needs to be in master first to before merge
 •git push origin [branch name]
-  - pushes the branch versioin to masters respotory
+  - links the branch to the master
+  - checkout master first then push
 
 
