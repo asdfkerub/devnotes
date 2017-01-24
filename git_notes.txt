@@ -30,9 +30,10 @@ Git Commands
 • git pull - pulls the changes in a remote repository to your own local repository.
 • git clone ___ - clones a remote repository in ___ to your own local folder.
 • git fork
-
+  - similar to git clone but mainly used to create a copy of respotory/project that you can modify independently with out changing the original respotory.
 • git pull request
-
+  - once changes are done to forked rep. you can pull request from the original owner you forked from. Then the owner decide whether or not to use the changes 
+    into their respo.
 • git merge : merges to respotory
   - merges all branch to the respotory
   - * needs to be in master first before merge
