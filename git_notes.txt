@@ -27,7 +27,7 @@ Git Commands
 
 • git merge : merges to respotory
   - merges all branch to the respotory
-  - *needs to be in master first before merge
+  - * needs to be in master first before merge
 • git push origin [branch name]
   - links the branch to the master
   - checkout master first then push
