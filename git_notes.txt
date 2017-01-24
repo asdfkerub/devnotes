@@ -5,6 +5,8 @@ Git Commands
 • git commit -m "..." - commits the changes to the repository.
 • git checkout ____ - switches to the branch name provided in your git repository. This will create a new branch if the name provided doesn't exist.
 • git branch - shows all of your git branches and marks the one you are currently on.
+  - git branch [name] : adds a branch
+• git checkout [branch name] : go to a branch
 • git log - shows all the backups created in the repository.
   ⁃ git log -p : shows what is different in revisions
   ⁃ git log -2 : shows (-2) how many to log
@@ -23,5 +25,10 @@ Git Commands
 
 • git pull request
 
-• git merge
+• git merge : merges to respotory
+  - merges all branch to the respotory
+  - needs to be in master first to before merge
+•git push origin [branch name]
+  - pushes the branch versioin to masters respotory
+
 
