@@ -13,11 +13,17 @@ Git Commands
 • git commit -m "..." - commits the changes to the repository.
 • git checkout ____ - switches to the branch name provided in your git repository. This will create a new branch if the name provided doesn't exist.
 • git branch - shows all of your git branches and marks the one you are currently on.
-  - git branch [name] : adds a branch
-  - - * Branch if:
+  - git branch <name> : adds a branch
+  - - * use  Branch if:
   - - - -  Preparting to make big changes
   - - - -  Are about to reset changes that you dont want to loose.
   - - - -  About to work on a new feature that may or may not be included on the final project
+  - - - -  Experimental changes
+  - - - -  Bug Fixes
+  - git branch <new branch name> <old branch>
+  - - * if you want to make a branch of an old branch
+  - git branch <new branch name> master
+  - - * if you want to make a new branch from the master.
 • git checkout [branch name] : go to a branch
 • git log - shows all the backups created in the repository.
   ⁃ git log -p : shows what is different in revisions
