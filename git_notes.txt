@@ -58,4 +58,29 @@ Git Commands
   - do this after merging from github
 
 
+FORK VS CLONE
+-------------
+
+Fork : A remote, server side copy of the respotory, distict from the original.
+  - Use if:
+    - Your not one of the people directly involved in the project. No "ownership"
+    - Your part of a very big team.
+    - Your contributions to the project need approval before it gets incorporated
+
+Clone : not a fork, clone is a local copy of some remote respotory.
+git clone [url]
+ - Use if:
+    - Your the only one working on the project.
+    - Your part of a small team.
+
+====================
+COLLABORATIONS STEPS
+====================
+1) Create a project respotory
+2) Cloe that respotory to your local machine.
+3) To work on something new create a descriptively-named branch on GitHub
+4) Create a branch with the same name on your local respotory. Pull the GitHub branch to your local branch.
+5) Follow the workflow like normally would.
+6) Regullarly push your work to GitHub branch! (After every major commit on your local machine).
+
 
