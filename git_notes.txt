@@ -47,6 +47,9 @@ Git Commands
 • git merge : merges to respotory
   - merges all branch to the respotory
   - * needs to be in master first before merge
+  - git merge --squash [branch to merge]
+  - - * Takes all the commits of one of the branch and pu it together with the other branch its mergin with.
+  - - - Help full when creating a new feature or fixing a bug that requires some experimentation.
 • git push origin [branch name]
   - links the branch to the master
   - checkout master first then push
