@@ -84,3 +84,8 @@ COLLABORATIONS STEPS
 6) Regullarly push your work to GitHub branch! (After every major commit on your local machine).
 
 
+========================
+LINKING GITHUB RESPOTORY
+========================
+1) git remote add origin [url]
+2) git push -u origin master
