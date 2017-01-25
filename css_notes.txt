@@ -13,6 +13,7 @@ floated elements. OR add a dummy div inside the same container and add css to th
   - A vay to visualize different elements inside of a webpage.
   - Add big lego blocks first , then add smaller elements inside of big block.
 
+
 CRITICAL VS NON CRITICAL
 ------------------------
 CRITICAL
@@ -22,3 +23,9 @@ NON CRITICAL
   - elements that are non critical include interactions, visual rewards, feedback, and movement.
 
 * Make sure to apply CSS3 to non critical areas.
+
+DEBUGGING
+---------
+*{
+ outline: 
+ }
