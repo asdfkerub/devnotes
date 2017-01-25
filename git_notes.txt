@@ -89,3 +89,12 @@ LINKING GITHUB RESPOTORY
 ========================
 1) git remote add origin [url]
 2) git push -u origin master
+
+
+=========
+LESS CSS
+=========
+<link rel="stylesheet/less" type="text/css"  href="style.less">
+<script src="less.js" type="text/javascript"> or use CDN
+* Make sure stylesheet is loaded first before the less script
+
