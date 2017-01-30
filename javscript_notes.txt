@@ -1,6 +1,8 @@
 ==========
 MODULO (%)
 ==========
-Modulo is a companion operator to divide - think of it as "remainder". Given two numbers, modulo divides the second number into the first number an integer number of times and returns the remainder.
+Modulo is a companion operator to divide - think of it as "remainder". Given two numbers,
+ modulo divides the second number into the first number an integer number of times and returns the remainder.
 
-Examples: (34 % 6) is 4 because 34 integer-divides into 6 five times (30), leaving a remainder of 4. Modulo is great for determining if a number is even/odd: (16 % 2) is 0: it is even. Is 42 a multiple of ten? (42 % 10) is 2: no it is not.
+Examples: (34 % 6) is 4 because 34 integer-divides into 6 five times (30), leaving a remainder of 4. Modulo is great for
+ determining if a number is even/odd: (16 % 2) is 0: it is even. Is 42 a multiple of ten? (42 % 10) is 2: no it is not.
