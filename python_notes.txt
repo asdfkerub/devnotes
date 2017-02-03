@@ -6,3 +6,77 @@ DATA TYPES
   Lists -  A type of data that is mutable and  can hold a group of values. Usually meant to store a collection of related data
   Dictionaries - A group of key-value pairs. Dictionary elements are indexed by unique keys which are used to access values
   Sets - An unordered collection of data with no duplicate elements supporting operations like union, intersection, and difference
+
+COMMENTING
+  # - to comment single line.
+  """ """ or ''' ''' - to comment multiple lines (it needs to be three double quotes or single quotes).
+--------------------------------
+
+A WAY OF INSTERTING VAR
+ {} - and the string .format() method to inject variables into your string - this is known as string interpolation
+ Exmaple:
+   first_name = "Zen"
+   last_name = "Coder"
+   print "My name is {} {}".format(first_name, last_name)
+
+CAPITALIZE
+  <string>.capitalize()
+  Example:
+  my_string = 'hello world'
+  print my_string.capitalize()
+  # the output would be:
+  # Hello world
+
+SWAPCASE CAPITALIZING
+  <string>.swapcase()
+  Return a copy of a string with uppercase characters converted to lowercase, and vice versa.
+  Example:
+  my_string = 'Hello WORLD'
+  print my_string.swapcase()
+  # the output would be:
+  # hELLO world
+
+ALL CAPS
+  <string>.upper()
+  Return a copy of a string converted to all uppercase.
+  Example:
+  my_string = 'hello world'
+  print my_string.upper()
+  # the output would be:
+  # HELLO WORLD
+
+MORE FUNCTIONS
+---------------
+
+  <string>.find(<substring>)
+  Determine if a specified string (in this example, 'el') occurs in a given string and returns the index or
+  location of where the substring ('el') occurred from the string. If not found, it will return -1 as a result.
+  Example:
+  my_string = "hello world"
+  print my_string.find("el")
+  # the output would be:
+  # 1
+
+  <string>.replace(<old>, <new> [, max])
+  This method returns a copy of the string with all occurrences of substring old replaced by new. If the optional
+  argument max is given, only the first number of times indicated in max will have the substring old replaced.
+  Example:
+  my_string = "hello world"
+  print my_string.replace("world", "kitty")
+  # the output would be:
+  # hello kitty
+ 
+  Example 2:
+  my_string = "egg, egg, Spam, egg and Spam"
+  print my_string.replace("egg", "Spam", 2)
+  # the output would be:
+  # Spam, Spam, Spam, egg and Spam
+  # notice that only the first 2 "egg" matches were replaced in the string.
+
+
+More Functions
+https://docs.python.org/2.6/library/string.html
+
+
+
+
