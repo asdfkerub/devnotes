@@ -1,0 +1,93 @@
+Effects (functions to do some cool animation effects)
+  .hide()
+  .show()
+  .toggle()
+  .slideDown()
+  .slideToggle()
+  .slideUp()
+  .fadeOut()
+  .fadeIn()
+CSS (adding or removing a class for any HTML element/DOM)
+  .addClass()
+  .removeClass()
+  .css()
+Manipulation (retrieving or setting value or text in any HTML element)
+  .after()
+  .append()
+  .prepend()
+  .attr()
+  .before()
+  .html()
+  .text()
+  .val()
+Events (functions to handle an event)
+  .click()
+  .on()
+  .live() - deprecated (JQuery 1.7)
+  .hover()
+
+
+
+========================================
+
+return false;
+ - makes the default to return false. For example: if you submit a form but
+   doesnt want to go to a page on submit.
+
+.submit();
+ - you can use submit to hard submit a form with a click somewhere outside of the <form>
+ - you can use submit to do something when it is submitted like .submit(function(){//code here});
+
+.serialize()
+ - preps a form to be handled by a computer. preps to the from to be manipulated
+   behind the scenes.
+ - takes information inside the submitted form to be in one string and separated by end signs
+   use console.log($('form name').serialize()); to see what serialize do.
+
+-----------
+<div>
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <h3>4</h3>
+</div>
+
+.children()
+ - targets the childrens inside of the containing element
+    ForExample: $('div').children('p').css('color','red');
+
+.parent()
+ - targets the parent or the container element
+    ForExample: $('p').parent().append('<p>new</p>');
+
+.siblings()
+ - targets the siblings.
+   ForExample:
+     $('p').click(function(){
+       $('this').siblings('h3').css('color','blue');
+     });
+
+<div>
+  <button>test</button>
+  <ul>
+    <li><h3>fdsa<span>asdf</span></h3></li>
+    <li><h3>fdsa<span>asdf</span></h3></li>
+    <li><h3>fdsa<span>asdf</span></h3></li>
+  </ul>
+</div>
+
+* all can also use chaining
+  $('button').click(function(){
+    $(this).siblings().children().children().children().text('123');
+    //targeted span
+  })
+
+
+-------------------
+
+event.stopPropagation();
+ - doesnt allow function to take affect to the parent(container) element.
+   For Example:
+    $().click(function(anyName){
+      anyName.stopPropagation();
+    })

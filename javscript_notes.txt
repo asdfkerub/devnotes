@@ -1,8 +1,48 @@
+var x;               //  x is undefined
+var x = 5;           //  x is a Number
+var x = 5;           //  x is an Integer
+var x = 5;           //  x is a decimal
+var x = "John";      //  x is a String
+var x = [];          //  x is an array
+
 ==========
 MODULO (%)
 ==========
 Modulo is a companion operator to divide - think of it as "remainder". Given two numbers,
- modulo divides the second number into the first number an integer number of times and returns the remainder.
+modulo divides the second number into the first number an integer number of times and returns the remainder.
 
 Examples: (34 % 6) is 4 because 34 integer-divides into 6 five times (30), leaving a remainder of 4. Modulo is great for
- determining if a number is even/odd: (16 % 2) is 0: it is even. Is 42 a multiple of ten? (42 % 10) is 2: no it is not.
+determining if a number is even/odd: (16 % 2) is 0: it is even. Is 42 a multiple of ten? (42 % 10) is 2: no it is not.
+
+
+==============
+MATH FUNCTIONS
+==============
+Math.round() rounds the number.
+Math.random() returns a random generated decimal number from 0 to 1. Cannot return 1.
+Math.floor() makes negative more negative and positive less positive.
+Math.ceil() makes positive more positive and negative less negative.
+Math.trunc() drops any fraction, moving the number towards zero.
+Math.trunc(Math.random() * 50) generates an integer 0 - 49.
+Math.trunc(Math.random() * 50)+51 number generated starts from 51.
+
+Examples:
+Math.floor(2.718) and Math.trunc(2.718) both return 2, but Math.ceil(2.718) returns 3.
+Math.floor(-3.1416) is -4; both Math.trunc(-3.1416) and Math.ceil(-3.1416) are -3.
+Naturally, Math.ceil(42) == Math.trunc(42) == Math.floor(42) == 42
+
+
+=================
+FINDING DATA TYPE
+=================
+typeof
+typeof 24 === "number" returns true it is a number
+
+
+=======================
+LOOPING THROUGH OBJECTS
+=======================
+for(var key in objectname){
+
+}
+Use for looping through objects like a for loop for arrays
