@@ -30,7 +30,13 @@ A WAY OF INSTERTING VAR
    first_name = "Zen"
    last_name = "Coder"
    print "My name is {} {}".format(first_name, last_name)
-
+ Example 2:
+   fname = "Kerub"
+   lname = "Querubin"
+   age = 21
+   print "About: {}{} is roughly {} years old".format(fname,lname,age)
+ Result:
+    About: KerubQuerubin is roughly 21 years old
 
 -----------------------------
 ADDING STRING WITH AN INTEGER
