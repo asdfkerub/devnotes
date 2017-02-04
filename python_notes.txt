@@ -50,7 +50,116 @@ ADDING STRING WITH AN INTEGER
   Result:
     kerubquerubin21
 
+-----------------
+MANUPULATING LIST
+-----------------
+  <list>.append(<new_element>)
+  Appends a new item onto the end of the given list. You can pass any data type into this function.
+  Example:
+  x = [1,2,3,4,5]
+  x.append(99)
+  print x
+  #the output would be [1,2,3,4,5,99]
 
+  <list>.insert(<index>, <new_element>)
+  Inserts a new item into the list at the given index. You can pass any data type into this function.
+  Example:
+  x = [1,2,3,4,5]
+  x.insert(2,99)
+  print x
+  #the output would be [1,2,99,3,4,5]
+
+  <list>.remove(<element>)
+  Remove the first item from the list whose value is provided. Errors if the element does not exist
+  Example:
+  x = [1,2,3,4,5]
+  x.remove(3)
+  print x
+  #the output would be [1,2,4,5]
+
+  <list>.pop(<optional_index>)
+  Remove the item at a given position; if the position is not given, it will remove the last entry from the list
+  Example:
+  x = [1,2,3,4,5]
+  x.pop()
+  print x
+  #the output would be [1,2,3,4]
+  y = [10,11,12,13,14]
+  y.pop(1)
+  print y
+  #the output would be [10,12,13,14]
+
+  <list>.sort()
+  Sorts the elements in a list in ascending order by numerical value, or alphabetically in the case of strings. Try sorting an array with mixed data types. What causes this behavior?
+  Example:
+  x = [99,4,2,5,-3];
+  x.sort()
+  print x
+  #the output would be [-3,2,4,5,99];
+    Uses [ ] characters to return a copy of the list, constrained to the specified indices. The starting index and ending index should be separated by the ":" character.
+    Example:
+      x = [99,4,2,5,-3];
+      print x[:]
+      #the output would be [99,4,2,5,-3]
+      print x[1:]
+      #the output would be [4,2,5,-3];
+      print x[:4]
+      #the output would be [99,4,2,5]
+      print x[2:4]
+      #the output would be [2,5];
+
+-----------------------
+List Built-in Functions
+-----------------------
+Below are some built-in functions that deal with lists. The following functions can also be applied to all sequences, including tuples and strings. What do we mean when we say sequence? Think of a sequence as anything over which we can iterate.
+
+  len()
+  Returns the number of items in a sequence.
+  Example:
+  my_list = [1, 'Zen', 'hi']
+  print len(my_list)
+  # the output would be 3
+
+  max()
+  Returns the largest item in the sequence.
+  Example:
+  my_list = [1, 7, 3]
+  print max(my_list)
+  # the output would be 7
+
+  min()
+  Returns the smallest item in the sequence. When comparing boolean to numbers, True == 1 and False == 0. Comparing items of differing types are quite uncommon, but if you ever do this, note that all numbers < all dictionaries < all lists < all strings < all tuples.   Again ask yourself what causes this behavior. How would you go about finding out?
+  Example:
+  my_list = [1, 7, 3]
+  print min(my_list)
+  # the output would be 1
+
+  any()
+  Returns True if there exists any item in the sequence which is True.
+  Example:
+  my_list = [0, 'hi', '']
+  print any(my_list)
+  # the output would be True since a string would equate to true in this case
+  my_list = [0, '']
+  print any(my_list)
+  # the output would be False since 0 (zero) and an empty string will both be false
+
+  all()
+  Returns True if all items in the sequence are True.
+  Example:
+  my_list = [0, 'Zen', '']
+  print all(my_list)
+  # the output would be False
+  my_list = [4, 'hi']
+  print all(my_list)
+  # the output would be True
+
+
+
+
+-----
+OTHER
+-----
 CAPITALIZE
   <string>.capitalize()
   Example:
@@ -108,6 +217,9 @@ MORE FUNCTIONS
 
 More Functions
 https://docs.python.org/2.6/library/string.html
+
+Extra url links
+(ABOUT LINKS DATA TYPE) http://www.linuxtopia.org/online_books/programming_books/python_programming/python_ch14s07.html
 
 
 
