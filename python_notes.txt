@@ -21,14 +21,29 @@ DATA TYPES
 COMMENTING
   # - to comment single line.
   """ """ or ''' ''' - to comment multiple lines (it needs to be three double quotes or single quotes).
---------------------------------
 
+-----------------------
 A WAY OF INSTERTING VAR
+-----------------------
  {} - and the string .format() method to inject variables into your string - this is known as string interpolation
  Exmaple:
    first_name = "Zen"
    last_name = "Coder"
    print "My name is {} {}".format(first_name, last_name)
+
+
+-----------------------------
+ADDING STRING WITH AN INTEGER
+-----------------------------
+  use str()
+  Example:
+    fname = "kerub"
+    lname = "querubin"
+    age = str(21)
+    print fname+lname+age
+  Result:
+    kerubquerubin21
+
 
 CAPITALIZE
   <string>.capitalize()
