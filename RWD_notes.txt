@@ -1,0 +1,47 @@
+RESPONSIVE WEB DESIGN
+
+------------
+BRAKE POINTS
+------------
+Mobile - 480px horizontal display and lower
+Tablet - 481px to 1023px horizontal display
+Desktop - 1024px horizontal display and higher
+
+
+----------
+FONT SIZES
+----------
+REM
+(1rem = 16px) 16px is the default browser size
+example:
+  font-size: 2rem;
+
+EM and/or %
+(1em = 16px = 100%) 16px the default browser size
+Both em and % are relative measures. The difference is what each is relative to. em is always relative to font size.
+% is relative to the containing block, usually the body, a div, or a table unless applied to font-size, in which case it applies to the parent font-size.
+
+CONCLUSION
+em is becoming the standard for font sizes on the web, and we will be using ems instead of % when we deal with:
+
+font sizes - Since we are more familiar with pixels, we will be doing calculations a lot to convert pixel to em. The formula is 1 / parent's font-size * required pixel value = em value. 
+So if you are planning to have a 24px text and the parent's font-size is 1em or 16px, then:
+
+1 / 16px * 24px = 1.5em
+sizing images - For images, we are only interested in width, because we will just use auto for the height. Making it adjust proportionately to whatever width the image has. So if we want an image with 20px as width, then:
+
+1 / 16px * 20px = 1.25em
+paddings / margins (for fonts)
+We use % when we deal with:
+
+column's / container's width - If you plan to have a 320px width on a 960px width container, then:
+
+320 / 960 = 33.333% 
+We use rem:
+
+font sizes
+paddings / margins (for fonts)
+Finally, we use px for:
+
+media queries
+paddings / margins (for containers like divs)
