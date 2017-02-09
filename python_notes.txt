@@ -38,6 +38,26 @@ A WAY OF INSTERTING VAR
  Result:
     About: KerubQuerubin is roughly 21 years old
 
+------------------------------
+COMBINING STRINGS WITH STRINGS
+------------------------------
+.join() returns a string in which the string elements of sequence have been joined by str separator.
+
+(with seperator string)
+  names = ['name1','name2','name3']
+  seperator = '-'
+  print seperator.join(names)
+  # will print out name1-name2-name3
+or
+(with out seperator but on a new line)
+  print '\n'.join(names)
+  #will print out 
+  name1
+  name2
+  name3
+
+
+
 -----------------------------
 ADDING STRING WITH AN INTEGER
 -----------------------------

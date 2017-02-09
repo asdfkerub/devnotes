@@ -1,0 +1,6 @@
+*need to import re
+NO_NUM_REGEX = re.compile(r'^[^0-9]+$') # no number
+EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$') # must be a valid email
+PASS_LOWER_REGEX = re.compile(r'(?=.*[a-z])') # atleast one lowercase
+PASS_UPPER_REGEX = re.compile(r'(?=.*[A-Z])') # atleast one uppercase
+PASS_NUM_REGEX = re.compile(r'(?=.*[0-9])') # atleast one number
