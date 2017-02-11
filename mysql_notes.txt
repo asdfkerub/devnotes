@@ -1,0 +1,28 @@
+* - ALL
+
+SELECT
+  SELECT * FROM table_name    #select everything from a table
+  SELECT column_name FROM table_name    #selects a column from a table
+  SELECT column_1 , column_2 FROM table_name    #select column_1 and column_2 from table
+  SELECT column_1 FROM table_name WHERE id = 3    #select column_1 from table of a row
+  SELECT column_1 FROM table_name WHERE id = 3 or id = 2    #select column_1 from table of row 3 or row 2
+  SELECT column_2 FROM table_name WHERE id > 3    #select column_1 from table of rows greater than 3
+  SELECT * FROM table_name WHERE column_1 LIKE '%k'     #select everything from table where column_1 values ends with a ' K '
+  SELECT * FROM table_name WHERE column_1 LIKE 'K%'     #select everything from table where column values starts with a ' K '
+
+SELECT w/ SORTING
+  SELECT * FROM table ORDER BY column_1 DESC    #select everything from table order by column_1 contents descending
+  SELECT * FROM table ORDER BY column_1 AC      #select everything form table order by column_1 contents ascending
+  SELECt column_1 FROm table ORDER BY column_1    #select everything from table order by alphabethical order
+
+INSERT
+  INSERT INTO table_name (column_1 , column_2) VALUES ('column_1values' , 'column_2values')   #instert on table at column_1 and column_2 with the values of column_1values and column_2values
+
+UPDATE
+  UPDATE table_name SET column_name1 = 'value' , column_name2 = 'value' WHERE id = 'id_to_update'   #update from table at column_1 with the value of value and column_2 with the value of value where id is id of number
+  * if WHERE condition is not added to the UPDATE statement, the changes will be applied to every record in the table.
+
+DELETE
+  SET SQL_SAFE_UPDATES = 0;   #might need to this if there are errors when trying to delete
+  DELETE FROM table_name WHERE id = 2   #delete from table with an id row of 2
+  * if WHERE condition is not added to the DELETE statement, it will delete all the records on the table.
